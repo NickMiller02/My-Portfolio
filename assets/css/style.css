@@ -12,7 +12,7 @@ body {
     background-color: rgb(131, 125, 117);
 }
 
-.header {
+.subject {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -38,6 +38,6 @@ body {
     padding: 20px;
 }
 
-.NickandKaley img{
+.picture-sizing img{
     max-height: 300px;
 }
