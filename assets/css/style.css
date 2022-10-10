@@ -1,23 +1,65 @@
 * {
-    box-sizing:content-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+:root {
+    --primary:  rgb(255, 255, 255);
+    --secondary:  #0e4163;
+    --gray: #393d3f;
+  }
 
 html {
     height: 100%;
 }
 
 body {
-    background-color: rgb(131, 125, 117);
+    background-color: rgb(255, 255, 255);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
+
+header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--primary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+  }
 
 a {
     color: #ffffff;
@@ -37,7 +79,7 @@ li {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #061d2c;
+    background-color: #0e4163;
     color: #ffffff;
 }
 
@@ -51,6 +93,11 @@ li {
     margin-left: 25px;
 }
 
+.slight-right {
+    float: right;
+    margin-left: 5px;
+}
+
 .content {
     width: 100%;
     display: inline-block;
@@ -59,8 +106,83 @@ li {
 }
 
 .picture-sizing img{
-    max-height: 300px;
+    max-height: 200px;
 }
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--secondary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact address a {
+    color: var(--tertiary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--gray) 0%, var(--gray) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
+  
+  .contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+  }
+
+  .mod-one {
+    background-image: url(../images/Screenshot\ \(6\).png);
+  }
 
 @media screen and (max-width: 768px) {
     header {

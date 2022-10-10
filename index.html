@@ -9,10 +9,10 @@
     
     <!-- Navigation Bar -->
 
-    <body>
-        <header>
-            <div class="header">
-            <h1> Nicholas' Portfolio</h1>
+<body>
+    <header>
+            <nav class="header">
+            <h1 class="float-left"> Nicholas' Portfolio</h1>
         
                 <ul>
                     <li class="float-right"><a href="#Nick-Miller">Me</a></li>
@@ -20,14 +20,14 @@
                     <li class="float-right"><a href="#Hobbies">Hobbies</a></li>
                     <li class="float-right"><a href="#Contact">Contact</a></li>
                 </ul>
-            </div>
-        </header>
+            </nav>
+    </header>
 
 
  
     <div class="content">   
         <!-- Introduction of Me -->
-        <div class="subject">
+        <section class="subject" id="Nick-Miller">
             <div class="picture-sizing">
                 <img src="./assets/images/image3.jpeg" class="float-left"
                  alt="Chevy Camaro Logo"/>
@@ -38,12 +38,13 @@
                             how HTML and CSS work together. Below is more about me and what I do in my daily life!
                         </p>
             </div>
-        </div>
+        </section>
 
         <!-- Job Desc -->
-        <div class="subject">
+        <section class="subject" id="Experience">
                 <div class="picture-sizing">
-
+                    <img src="./assets/images/cookies.jpg" class="float-right"
+                    alt="Baking Cookies"/>
 
                     <h2>Experience</h2>
                         <p>
@@ -53,10 +54,10 @@
                         2 previous companies.
                         </p>
                 </div>
-        </div>
+        </section>
 
         <!-- Hobbies -->
-        <div class="subject">
+        <section class="subject" id="Hobbies">
             <div class="picture-sizing">
                 <h2>Hobbies</h2>
                     <img src="./assets/images/IMG_3886.jpg" class="float-left"
@@ -67,21 +68,38 @@
                     of those I love to play games on my Xbox Series X! But currently trying to build a computer
                     to play on both.
                     </p>
+            </div>        
+        </section>
 
-        </div>
+        <!-- Application -->
+        <section class="subject picture-sizing" id="Coding">
+            <a href="https://nickmiller02.github.io/module1-challenge/">
+            <div class="picture-sizing">
+                <h2>Coding</h2>
+                    <img src="./assets/images/Screenshot (6).png" class="float-left"
+                    alt="Chevy Camaro"/>
+                    
+                    <p>
+                    Currenlty with one application made, this page will be updated consistently throughout courses and careers
+                    in any type of field.                       
+
+                    Click to see the current application!
+                    </p>
+            </div>
+            </a>        
+        </section>
 
         <!-- Contact -->
-        <div class="subject">
-            <div>
-                <h2>Contact</h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+        <section class="page-section contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="float-left">
+              <address>
+                <a href="tel:+14077976310">4077976310</a>
+                <a href="mailto:nicholasmill157@gmail.com">nicholasmill157@gmail.com</a>
+                <a href="https://github.com/NickMiller02">GitHub</a>
+              </address>
             </div>
-        </div>
-    </div>
+          </section>
 
 
         <!-- Footer Bar -->
@@ -91,5 +109,5 @@
         </footer>
 
 
-    </body>
+</body>
 </html>
