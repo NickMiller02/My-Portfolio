@@ -16,6 +16,8 @@ When brought to the contact section, click on any method to get in contact with 
 
     ![Portfolio](./assets/images/Portfolio.png)
 
+    ![Portfolio](./assets/images/Portfolio.png)
+
 ## Credits
 
 N/A
