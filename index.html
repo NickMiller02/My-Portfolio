@@ -10,128 +10,71 @@
     </head>
     
     <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">WELCOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/coding.html">Coding</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <body>
-    <header>
-            <nav class="header">
-            <h1 class="float-left"> Nicholas' Portfolio</h1>
-        
-                <ul>
-                    <li class="float-right"><a href="#Contact">Contact</a></li>
-                    <li class="float-right"><a href="#Coding">Coding</a></li>
-                    <li class="float-right"><a href="#Hobbies">Hobbies</a></li>
-                    <li class="float-right"><a href="#Experience">Experience</a></li>
-                </ul>
-            </nav>
-    </header>
-
-
- 
-    <div class="content">   
-        <section>
-            <!-- Introduction of Me -->
-            <div id="intro" class="container row">
-                <div id="intr-pic" class="col-6 center intro-pic">
-                    <img src="./assets/images/image3.jpeg" alt="Chevy Camaro Logo"/>
-                </div>
-
-                <div id="intro-desc" class="col-6 container center">
-                    <h2>Nick Miller</h2>
-                    <p>
-                        Hi! I'm Nicholas Miller, a 20-year-old UCF Coding student currently learning about
-                        how HTML and CSS work together. Below is more about me and what I do in my daily life!
-                    </p>
-                </div>
+    <div id="intro" class="container">
+        <div id="intro-pic" class="box float-left border">
+            <img src="./assets/images/image3.jpeg" class="intro-pic">
+        </div>
+        <div id="intro-desc" class="box float-right border">
+            <h4><a href="/about.html">About Me</a></h4>
+            <p></p>
+        </div>
+    </div>
+    <div id="featured-projects" class="container">
+        <div id="new-project" class="box float-left">
+            <h4>My Newest Project</h4>
+            <div id="current-project" class="card">
+                <img src="/assets/images/woofr.png">
+                <p>This is my most recent  collaboration project! it is a feed styled website dedicated around dogs and dog service using models, maps, routes, APIs and more!</p>
             </div>
-        
-        
-        
-        
-        
-        
-        
-        
-            <section class="subject" id="Nick-Miller">
-            <div class="picture-sizing">
-                <img src="./assets/images/image3.jpeg" class="float-left"
-                 alt="Chevy Camaro Logo"/>
-
-                    <h2>Nick Miller</h2>
-                        <p>
-                            Hi! I'm Nicholas Miller, a 20-year-old UCF Coding student currently learning about
-                            how HTML and CSS work together. Below is more about me and what I do in my daily life!
-                        </p>
+        </div>
+        <div id="older-projects" class="box row-cols-2 float-right">
+            <h5>Older Projects</h5>
+            <div id="project1" class="card col">
+                <img src="">
+                <p>test</p>
             </div>
-        </section>
-
-        <!-- Job Desc -->
-        <section class="subject" id="Experience">
-                <div class="picture-sizing">
-                    <img src="./assets/images/cookies.jpg" class="float-right"
-                    alt="Baking Cookies"/>
-
-                    <h2>Experience</h2>
-                        <p>
-                        Currently I work as a Shift Lead at the Specialty Bakery known as Crumbl Cookies!
-                        I've been at this store for nearly a year, learning about different types of dough,
-                        toppings and more. My previous jobs include being a Car Detailer and a Line Cook at
-                        2 previous companies.
-                        </p>
-                </div>
-        </section>
-
-        <!-- Hobbies -->
-        <section class="subject" id="Hobbies">
-            <div class="picture-sizing">
-                <h2>Hobbies</h2>
-                    <img src="./assets/images/IMG_3886.jpg" class="float-left"
-                    alt="Chevy Camaro"/>
-
-                    <p>
-                    Currently my hobbies include working on cars and racing them! But when I'm doing neither
-                    of those I love to play games on my Xbox Series X! But currently trying to build a computer
-                    to play on both.
-                    </p>
-            </div>        
-        </section>
-
-        <!-- Application -->
-        <section class="subject picture-sizing" id="Coding">
-            <a href="https://nickmiller02.github.io/module1-challenge/">
-            <div class="picture-sizing">
-                <h2>Coding</h2>
-                    <img src="./assets/images/Screenshot (6).png" class="float-left"
-                    alt="Chevy Camaro"/>
-                    
-                    <p>
-                    Currenlty with one application made, this page will be updated consistently throughout courses and careers
-                    in any type of field.                       
-
-                    Click to see the current application!
-                    </p>
+            <div id="project1" class="card col">
+                <img src="">
+                <p>test</p>
             </div>
-            </a>        
-        </section>
-
-        <!-- Contact -->
-        <section class="page-section contact" id="Contact">
-            <h2>Contact Me</h2>
-            <div class="float-left">
-              <address>
-                <a href="tel:+14077976310">4077976310</a>
-                <a href="mailto:nicholasmill157@gmail.com">nicholasmill157@gmail.com</a>
-                <a href="https://github.com/NickMiller02">GitHub</a>
-              </address>
+            <div id="project1" class="card col">
+                <img src="">
+                <p>test</p>
             </div>
-          </section>
+            <div id="project1" class="card col">
+                <img src="">
+                <p>test</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
 
-
-        <!-- Footer Bar -->
-
-        <footer>
-            <span>Thanks for Visiting!</span>
-        </footer>
-        </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
